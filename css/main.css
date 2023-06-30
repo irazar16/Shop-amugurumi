@@ -79,7 +79,7 @@ body{
     left: 0;
     right: 10px;
     bottom: -6px;
-    content: "";
+    /*content: "";*/
     display: block;
     /* width: 50px; */
     border-radius: 50px;
@@ -206,17 +206,17 @@ body{
     font-size: 1.8rem;
     cursor: pointer;
 }
-#cart-icon[data-quantitiy]::after{
+#cart-icon[data-quantity="0"]::after{
     contain: "";
 }
-#cart-icon[data-quantitiy]::after{
-    content: "";
+#cart-icon[data-quantity]::after{
+    content: attr(data-quantity);
     position: absolute;
     top: 0;
     right: -12px;
     width: 20px;
     height: 20px;
-    background: var(--main-color);
+    background: var(--text-color);
     border-radius: 50%;
     color: white;
     font-size: 12px;
@@ -225,6 +225,7 @@ body{
     justify-content: center;
     align-items: center;
 }
+/* Cart */
 .cart{
     position: fixed;
     top: 0;
