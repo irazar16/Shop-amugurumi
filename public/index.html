@@ -5,7 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Amugurumi shop</title>
+    <!-- Link to CSS -->
     <link rel="stylesheet" href="./css/main.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
 </head>
 <body>
     <header class="header">
@@ -14,23 +17,182 @@
                 <nav class="nav">
                     <div class="nav_logo">
                         <h2 class="logo"><a href="#!">AmiGur</a></h2>
+                        <img src="./img/ " alt="">
                     </div>
                     <ul class="nav_list">
-                        <li><a href="#!" class="active">Home</a></li>
-                        <li><a href="#!">Produkt</a></li>
-                        <li><a href="#!">Pricing</a></li>
-                        <li><a href="#!">Contact</a></li>
+                        <li><a href="#home" class="active">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#products">Products</a></li>
+                        <li><a href="#contact">Contact</a></li>
                     </ul>
-                    <ul class="nav_login">
-                        <li><a href="#!">Sign up</a></li>
-                        <li><a href="#!" class="btn">Login</a></li>
-                    </ul>
+
+<!-- Login -->
+                    <div class="nav-icons">
+                        <i class='bx bx-menu' id ="menu-icon"></i>
+                        <i class="bx bx-search" id="search-icon"></i>
+                        <i class="bx bx-user" id="user-icon"></i>
+                        <i class='bx bxs-shopping-bag' id="cart-icon" data-quantity="0"></i>
+                    </div>
+                    <!-- Search Box -->
+                    <div class="search-box">
+                        <input type="text" name="" id="input" placeholder="Search heare..." class="input"/>
+                        <!-- <label for="search-box" class="bx bx-search"></label> -->
+                    </div>
+                        <!-- Login form toggle -->
+                        <div class="login-form">
+                            <form action="">
+                                <h2>Login </h2>
+                                <input type="email" name="" id="" placeholder="Your Email..." required>
+                                <input type="password" name="" id="" placeholder="Password" required>
+                                <a href="#">Forget Password</a>
+                                <input type="submit" value="Sign up" class="btn">
+                                <a href="#">Create account</a>
+                            </form></li>
+                        </div>
+                        <!--Cart  form toggle -->
+                        <div class="cart">
+                            <h2 class="cart-title">Your cart</h2>
+                            <!-- Content -->
+                            <div class="cart-content"></div>
+                            <!-- Total -->
+                            <div class="total">
+                                <div class="total-title">Total</div>
+                                <div class="total-price">$0</div>
+                            </div>
+                            <!-- Buy Button -->
+                            <button type="button" class="btn-buy">Pay Now</button>
+                            <!-- Close Cart -->
+                            <i class='bx bx-x' id="close-cart"></i>
+                        </div>
                 </nav>
-            </div>
-            <div class="header_content">
 
             </div>
+            <div class="header_content">
+            </div>        
         </div>
+        
     </header>
+    <!-- Products -->
+        <section class="shop container">
+            <h2 class="section-title">Shop Products</h2>
+            <!-- Shop content -->
+            <div class="shop-content">
+                <!-- Box 1 -->
+            <div class="product-box">
+                    <!-- Stripe need images that are on online on Local server it will not show in stripe checkout page we have to upLoad onLine -->
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjIcr7CchdQpeC4hfEnpTxrHZSJmxHgot16RrkTW6Q_xF_XD6RVmKzd2Z-lOa9U7e0sdzMdveT2erItbMKbiJyq-s3d0tSv9CiPE4r3vJUGYYwgtzvgurslhzZ7qyQEv_OGfM8DVEBFpP8wpsDhoUwOEuTCggwwFfflVn5BBJ9h7ES0a5VgSsDelElg/s320/01.jpg" 
+                    alt="" 
+                    class="product-img"
+                    />
+                <h2 class="product-title">Bear</h2>
+                <span class="price">$10.50</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+                <!-- Box 2 -->
+            <div class="product-box">
+                    <!-- Stripe need images that are on online on Local server it will not show in stripe checkout page we have to upLoad onLine -->
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjIcr7CchdQpeC4hfEnpTxrHZSJmxHgot16RrkTW6Q_xF_XD6RVmKzd2Z-lOa9U7e0sdzMdveT2erItbMKbiJyq-s3d0tSv9CiPE4r3vJUGYYwgtzvgurslhzZ7qyQEv_OGfM8DVEBFpP8wpsDhoUwOEuTCggwwFfflVn5BBJ9h7ES0a5VgSsDelElg/s320/01.jpg" 
+                    alt="" 
+                    class="product-img"
+                    />
+                <h2 class="product-title">Cat</h2>
+                <span class="price">$12.20</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+                <!-- Box 3 -->
+            <div class="product-box">
+                    <!-- Stripe need images that are on online on Local server it will not show in stripe checkout page we have to upLoad onLine -->
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjIcr7CchdQpeC4hfEnpTxrHZSJmxHgot16RrkTW6Q_xF_XD6RVmKzd2Z-lOa9U7e0sdzMdveT2erItbMKbiJyq-s3d0tSv9CiPE4r3vJUGYYwgtzvgurslhzZ7qyQEv_OGfM8DVEBFpP8wpsDhoUwOEuTCggwwFfflVn5BBJ9h7ES0a5VgSsDelElg/s320/01.jpg" 
+                    alt="" 
+                    class="product-img"
+                    />
+                <h2 class="product-title">Dino</h2>
+                <span class="price">$23.0</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+                <!-- Box 4 -->
+            <div class="product-box">
+                    <!-- Stripe need images that are on online on Local server it will not show in stripe checkout page we have to upLoad onLine -->
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjIcr7CchdQpeC4hfEnpTxrHZSJmxHgot16RrkTW6Q_xF_XD6RVmKzd2Z-lOa9U7e0sdzMdveT2erItbMKbiJyq-s3d0tSv9CiPE4r3vJUGYYwgtzvgurslhzZ7qyQEv_OGfM8DVEBFpP8wpsDhoUwOEuTCggwwFfflVn5BBJ9h7ES0a5VgSsDelElg/s320/01.jpg" 
+                    alt="" 
+                    class="product-img"
+                    />
+                <h2 class="product-title">Dog</h2>
+                <span class="price">$17.50</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+                <!-- Box 5 -->
+            <div class="product-box">
+                    <!-- Stripe need images that are on online on Local server it will not show in stripe checkout page we have to upLoad onLine -->
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjIcr7CchdQpeC4hfEnpTxrHZSJmxHgot16RrkTW6Q_xF_XD6RVmKzd2Z-lOa9U7e0sdzMdveT2erItbMKbiJyq-s3d0tSv9CiPE4r3vJUGYYwgtzvgurslhzZ7qyQEv_OGfM8DVEBFpP8wpsDhoUwOEuTCggwwFfflVn5BBJ9h7ES0a5VgSsDelElg/s320/01.jpg" 
+                    alt="" 
+                    class="product-img"
+                    />
+                <h2 class="product-title">Fox</h2>
+                <span class="price">$14.30</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+                <!-- Box 6 -->
+            <div class="product-box">
+                    <!-- Stripe need images that are on online on Local server it will not show in stripe checkout page we have to upLoad onLine -->
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjIcr7CchdQpeC4hfEnpTxrHZSJmxHgot16RrkTW6Q_xF_XD6RVmKzd2Z-lOa9U7e0sdzMdveT2erItbMKbiJyq-s3d0tSv9CiPE4r3vJUGYYwgtzvgurslhzZ7qyQEv_OGfM8DVEBFpP8wpsDhoUwOEuTCggwwFfflVn5BBJ9h7ES0a5VgSsDelElg/s320/01.jpg" 
+                    alt="" 
+                    class="product-img"
+                    />
+                <h2 class="product-title">Bee</h2>
+                <span class="price">$8.50</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+                <!-- Box 7 -->
+            <div class="product-box">
+                    <!-- Stripe need images that are on online on Local server it will not show in stripe checkout page we have to upLoad onLine -->
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjIcr7CchdQpeC4hfEnpTxrHZSJmxHgot16RrkTW6Q_xF_XD6RVmKzd2Z-lOa9U7e0sdzMdveT2erItbMKbiJyq-s3d0tSv9CiPE4r3vJUGYYwgtzvgurslhzZ7qyQEv_OGfM8DVEBFpP8wpsDhoUwOEuTCggwwFfflVn5BBJ9h7ES0a5VgSsDelElg/s320/01.jpg" 
+                    alt="" 
+                    class="product-img"
+                    />
+                <h2 class="product-title">Cow</h2>
+                <span class="price">$17.50</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+                <!-- Box 8 -->
+            <div class="product-box">
+                    <!-- Stripe need images that are on online on Local server it will not show in stripe checkout page we have to upLoad onLine -->
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjIcr7CchdQpeC4hfEnpTxrHZSJmxHgot16RrkTW6Q_xF_XD6RVmKzd2Z-lOa9U7e0sdzMdveT2erItbMKbiJyq-s3d0tSv9CiPE4r3vJUGYYwgtzvgurslhzZ7qyQEv_OGfM8DVEBFpP8wpsDhoUwOEuTCggwwFfflVn5BBJ9h7ES0a5VgSsDelElg/s320/01.jpg" 
+                    alt="" 
+                    class="product-img"
+                    />
+                <h2 class="product-title">Lion</h2>
+                <span class="price">$12.85</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+                <!-- Box 9 -->
+            <div class="product-box">
+                    <!-- Stripe need images that are on online on Local server it will not show in stripe checkout page we have to upLoad onLine -->
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjIcr7CchdQpeC4hfEnpTxrHZSJmxHgot16RrkTW6Q_xF_XD6RVmKzd2Z-lOa9U7e0sdzMdveT2erItbMKbiJyq-s3d0tSv9CiPE4r3vJUGYYwgtzvgurslhzZ7qyQEv_OGfM8DVEBFpP8wpsDhoUwOEuTCggwwFfflVn5BBJ9h7ES0a5VgSsDelElg/s320/01.jpg" 
+                    alt="" 
+                    class="product-img"
+                    />
+                <h2 class="product-title">Crokodayl</h2>
+                <span class="price">$12.95</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+                <!-- Box 10 -->
+            <div class="product-box">
+                    <!-- Stripe need images that are on online on Local server it will not show in stripe checkout page we have to upLoad onLine -->
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjIcr7CchdQpeC4hfEnpTxrHZSJmxHgot16RrkTW6Q_xF_XD6RVmKzd2Z-lOa9U7e0sdzMdveT2erItbMKbiJyq-s3d0tSv9CiPE4r3vJUGYYwgtzvgurslhzZ7qyQEv_OGfM8DVEBFpP8wpsDhoUwOEuTCggwwFfflVn5BBJ9h7ES0a5VgSsDelElg/s320/01.jpg" 
+                    alt="" 
+                    class="product-img"
+                    />
+                <h2 class="product-title">Rabit</h2>
+                <span class="price">$17.45</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+        </div>
+            
+
+    </section>
+    <!-- Link To Js -->
+    <script src="./js/main.js"></script>
+    <script src="./js/cart.js"></script>
 </body>
 </html>
